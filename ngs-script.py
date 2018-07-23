@@ -29,17 +29,17 @@ class NGS(object):
 
         if not os.path.exists(self.new_dir_new):    # Create new-new directory
             os.makedirs(self.new_dir_new)
-            print("CREATED: " + self.new_dir_new)
+            # print("CREATED: " + self.new_dir_new)
 
         if not os.path.exists(self.new_dir_old):    # Create new-old directory
             os.makedirs(self.new_dir_old)
-            print("CREATED: " + self.new_dir_old)
+            # print("CREATED: " + self.new_dir_old)
 
         for files in self.source:                   # Copy old dbf files into new-old directory
             if files.endswith(".dbf"):
                 shutil.copy(self.prev_dir_new + '\\' + files, self.new_dir_old)
 
-        print("Copied .dbf files from {0} to {1}".format(self.prev_dir_new, self.new_dir_old))
+        # print("Copied .dbf files from {0} to {1}".format(self.prev_dir_new, self.new_dir_old))
 
     def ftp_dl(self):                               # Function to download zip files from FTP
         ftp = FTP("ftp.ngs.noaa.gov", "anonymous")  # Define FTP credentials
@@ -49,11 +49,11 @@ class NGS(object):
         root_dirs.remove('ARCHIVE')                 # Remove folder 'ARCHIVE' from the list
 
         for i in root_dirs:                         # Loop through items in FTP dir, downloading each to new-new dir
-            print(i + " downloading " + str(ftp.size(i)) + " bytes")
+            # print(i + " downloading " + str(ftp.size(i)) + " bytes")
             local_filename = os.path.join(self.new_dir_new, i)
             fh = open(local_filename, 'wb')
             ftp.retrbinary('RETR ' + i, fh.write)   # Download current file in loop
-            print(i + " download complete")
+            # print(i + " download complete")
         ftp.close()
 
 
