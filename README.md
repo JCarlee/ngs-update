@@ -4,6 +4,13 @@ Utility to aid uGRIDD's monthly NGS Monument update.
 
 Create current month's directory along with 'new' and 'old' folders. Copy previous month's dbf files into current 'old' folder. Download all ZIP files from NOAA FTP into 'new' folder.
 
+## Dependencies
+Python 3.6
+os
+datetime
+shutil
+FTP/ftplib 
+
 ## Getting Started
 Working directory is hardcoded to "E:\Planet15JCarlee\NGS\Files" making this tool only functional on John Carlee's workstation at uGRIDD. This can be easily adapted to a different machine by changing line 9 to preferred local path.
 
