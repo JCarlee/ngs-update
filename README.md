@@ -29,7 +29,7 @@ Schedule to run on the first day of every month at 9:00 AM CDT.
 
 ### Completing the Update
 
-Following completion of script, run the internal dbf2Sql utility to complete the NGS update process.
+Following completion of script, run the internal dbf2Sql utility to complete the NGS update process (or add to scheduled task).
 
 ## Author
 
