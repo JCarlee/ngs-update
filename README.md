@@ -1,6 +1,6 @@
 # ngs-update
 
-Utility to aid uGRIDD's monthly NGS Monument update.
+Utility to aid monthly NGS Monument updates.
 
 Create current month's directory along with 'new' and 'old' folders. Copy previous month's dbf files into current 'old' folder. Download all ZIP files from NOAA FTP into 'new' folder.
 
