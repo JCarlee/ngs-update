@@ -12,7 +12,7 @@ opportunities leveraging my GIS skills with a heavy focus on Python development.
 
 
 ## Dependencies
-* Python 3.6
+* Python 3
 * os
 * datetime
 * shutil
@@ -27,12 +27,12 @@ Schedule to run on the first day of every month at 9:00 AM CDT.
 * Type "Task Scheduler" into windows search bar
 * Open Task Scheduler
 * Under **Actions** side bar, select *Create Basic Task*
-* Enter a logical Name, Next
+* Enter a Name
 * Select monthly
 * Set time, select all months, set Days to 1
 * Start a program
-* Program/script is the python.exe path
-* Add arguments: "C:\YOUR_DIRECTORY\ngs-script.py"
+* Program/script is the python.exe path (C:\Users\JoeSmith\AppData\Local\Programs\Python\Python37-32\python.exe)
+* Add arguments: C:\[YOUR_DIRECTORY]\ngs-script.py
 
 ### Completing the Update
 
