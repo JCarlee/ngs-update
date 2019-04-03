@@ -6,15 +6,15 @@ from ftplib import FTP
 
 class NGS(object):
     def __init__(self):
-        self.root = 'E:\\Planet15JCarlee\\NGS\\Files'                     # Only works on John Carlee's work desktop
-        self.now = datetime.datetime.now()                                # Set now to current date
+        self.root = os.getcwd()
+        self.now = datetime.datetime.now()
 
         # Define current month directory path
         self.new_dir = "{0}\\{1}{2}{3}"\
             .format(self.root, self.now.year, '{:02d}'.format(self.now.month), '{:02d}'.format(self.now.day))
 
-        self.new_dir_new = self.new_dir + "\\new"                         # Define new-new path
-        self.new_dir_old = self.new_dir + "\\old"                         # Define new-old path
+        self.new_dir_new = self.new_dir + "\\new"
+        self.new_dir_old = self.new_dir + "\\old"
 
         # Create list of directories that exist in root
         self.dirlist = [item for item in os.listdir(self.root) if os.path.isdir(os.path.join(self.root, item))]

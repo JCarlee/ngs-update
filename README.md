@@ -19,7 +19,7 @@ opportunities leveraging my GIS skills with a heavy focus on Python development.
 * FTP/ftplib 
 
 ## Getting Started
-Working directory is hardcoded to "E:\Planet15JCarlee\NGS\Files" making this tool only functional on John Carlee's workstation at uGRIDD. This can be easily adapted to a different machine by changing line 9 to preferred local path.
+Place ngs-script.py into your working directory.
 
 ### Scheduling
 
