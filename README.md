@@ -5,7 +5,7 @@ Utility to aid monthly NGS Monument updates.
 Create current month's directory along with 'new' and 'old' folders. Copy previous month's dbf files into current 'old' folder. Download all ZIP files from NOAA FTP into 'new' folder.
 
 ## Author
-**John Carlee** - JCarlee@gmail.com
+**John Carlee** - [Email me](mailto:JCarlee@gmail.com)
 
 ## Dependencies
 * Python 3
