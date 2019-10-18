@@ -7,10 +7,6 @@ Create current month's directory along with 'new' and 'old' folders. Copy previo
 ## Author
 **John Carlee** - JCarlee@gmail.com
 
-I am 9 year veteran in the Geographic Information Science and Cartography space. **I am currently looking for new job 
-opportunities leveraging my GIS skills with a heavy focus on Python development.**
-
-
 ## Dependencies
 * Python 3
 * os
